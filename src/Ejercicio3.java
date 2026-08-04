@@ -14,5 +14,17 @@ public class Ejercicio3 {
         int mayor = numeros[0];
         int menor = numeros[0];
 
+        for (int i = 1; i < numero; i++) {
+
+            if (numeros[i] > mayor) {
+                mayor = numeros[i];
+            }
+
+            if (numeros[i] < menor) {
+                menor = numeros[i];
+            }
+        }
+
+        JOptionPane.showMessageDialog(null, "Número mayor: " + mayor + "\nNúmero menor: " + menor);
     }
 }
