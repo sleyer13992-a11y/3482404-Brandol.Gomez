@@ -16,5 +16,18 @@ public class Ejercicio2 {
 
             suma += notas[i];
         }
+
+        double promedio = suma / numEstudiantes;
+
+        if (promedio >= 3.0) {
+            JOptionPane.showMessageDialog(null,
+                    "Promedio del curso: " + promedio +
+                            "\nEl curso APROBÓ.");
+        } else {
+            JOptionPane.showMessageDialog(null,
+                    "Promedio del curso: " + promedio +
+                            "\nEl curso REPROBÓ.");
+        }
+
     }
 }
