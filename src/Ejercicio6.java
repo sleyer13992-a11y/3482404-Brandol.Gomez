@@ -29,5 +29,17 @@ public class Ejercicio6 {
         resultado += "Candidato A: " + votosA + "\n";
         resultado += "Candidato B: " + votosB + "\n";
         resultado += "Candidato C: " + votosC + "\n";
+
+        if (votosA > votosB && votosA > votosC) {
+            resultado += "El ganador es el candidato A.";
+        } else if (votosB > votosA && votosB > votosC) {
+            resultado += "El ganador es el candidato B.";
+        } else if (votosC > votosA && votosC > votosB) {
+            resultado += "El ganador es el candidato C.";
+        } else {
+            resultado += "Hay un empate.";
+        }
+
+        JOptionPane.showMessageDialog(null, resultado);
     }
 }
