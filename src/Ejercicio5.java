@@ -21,5 +21,11 @@ public class Ejercicio5 {
                 resultado += "El número: " + buscar + " se encontró en la posición: " + i + "\n";
             }
         }
+
+        if (existe) {
+            JOptionPane.showMessageDialog(null, resultado);
+        } else {
+            JOptionPane.showMessageDialog(null, "El número " + buscar + " no fue encontrado en el array.");
+        }
     }
 }
